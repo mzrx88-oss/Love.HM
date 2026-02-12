@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى حبيبتي </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="login-page" class="active full-center">
+        <div class="card login-card fade-in-up">
+            <div class="heart-icon">❤️</div>
+            <h1 class="decorated-title">Welcome</h1>
+            <p>ادخلي علشان تشوفي المفاجأة</p>
+            <input type="password" id="password" placeholder="كلمة السر...">
+            <button class="unlock-btn" onclick="checkPassword()">Unlock ❤️</button>
+        </div>
+    </section>
+
+    <section id="flower-page" class="full-center">
+        <div class="back-container"><button class="back-btn-transparent" onclick="goBack('login-page')">← رجوع</button></div>
+        <h1 class="fade-in-up decorated-title">دوسي على الوردة</h1>
+        <div class="flower fade-in-up" onclick="goToLetter()">🌸</div>
+    </section>
+
+    <section id="letter-page">
+        <div class="back-container"><button class="back-btn-transparent" onclick="goBack('flower-page')">← رجوع</button></div>
+        <div class="card fade-in-up">
+            <h2 class="decorated-title">🌸 Love Letter 🌸</h2>
+            <div class="scroll-content">
+                <p>عايز أقول ليك كلمتين بقا،  يمكن ما تتخيليش...</p>
+                <p>انتي أكتر إنسانة ريحت قلبي من غير ما تحسي. كل مرة بتكلم معاكي بحس إني بجري من تعب الدنيا كلها وأجي لصوتك — بحبك لأنك بقيتي الحاجة اللي بتديني معنى كل يوم. انتي حلمي الي عايش علشانو عايش علشان احققو... انتي الحياة اللي  بتمناها من ربنا وعايزها يانور عيني ياحببتي وروحي ❤️🥰🥰🥹🫂 🤍❤️  </p>
+            </div>
+            <button class="unlock-btn" onclick="goToMemories()">Next» 💕</button>
+        </div>
+    </section>
+
+    <section id="memories-page">
+        <div class="back-container"><button class="back-btn-transparent" onclick="goBack('letter-page')">← رجوع</button></div>
+        <h1 class="fade-in-up decorated-title">Our Memories 🎀</h1>
+        
+        <a href="https://www.youtube.com/watch?v=iMZ1skkbUWI" target="_blank" class="full-box-link fade-in-up">
+            <span>🎵 أغنيتنا - عمرو دياب (تشغيل)</span>
+        </a>
+
+        <img src="images/h.jpg" class="square-img fade-in-up" alt="عيونك">
+
+        <div class="card fade-in-up">
+            <h3 class="decorated-title">⏱️ Love Timer ❤️</h3>
+            <div id="love-counter" class="timer-text"></div>
+            <p style="font-size: 12px; color: #888;">١٥ يونيو ٢٠٢٥</p>
+        </div>
+
+        <div id="v-section" class="card fade-in-up">
+            <h3 class="decorated-title">🎉 Valentine's Day 2026</h3>
+            <p>باقي على عيد الحب:</p>
+            <div id="v-counter" class="countdown-grid"></div>
+        </div>
+
+        <button class="unlock-btn" onclick="goToFinal()">Next 🎀</button>
+    </section>
+
+    <section id="final-page" class="full-center">
+        <div class="back-container"><button class="back-btn-transparent" onclick="goBack('memories-page')">← رجوع</button></div>
+        <h1 class="fade-in-up decorated-title">🎀 دوده حابب أقولك</h1>
+        <div class="white-msg fade-in-up">
+            <p>كل يوم معاكي هو هدية من ربنا، ..انتي طلعتي غاليه اوووي اووي علي قلبي امت بقا اتجوزك ونخلص🥹😂 انتي مستفزه الصراحه بس بحبك برضو ياكتكوته انتي بحبك وبحب عيونك اووي ...دي مقدمه بقا دوسي علي  "المفاجأة".</p>
+        </div>
+
+        <button class="unlock-btn fade-in-up" onclick="openOldSite()" style="background-color: #ff85a1;"> مفاجأة</button مفاجأة button>
+        
+        <button class="unlock-btn fade-in-up" onclick="goBack('login-page')" style="margin-top: 15px; background-color: #555; font-size: 0.9rem;">العودة للرئيسية</button>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
