@@ -6,6 +6,7 @@ body {
     background-color: #ffeef2;
     text-align: center; color: #444;
     overflow-x: hidden;
+    font-size: 1.1rem; /* تكبير الخط العام للموقع */
 }
 
 section { display: none; padding: 20px; min-height: 100vh; width: 100%; box-sizing: border-box; }
@@ -16,7 +17,7 @@ section.active { display: flex; flex-direction: column; align-items: center; }
 .back-container { width: 100%; text-align: right; padding: 10px; }
 .back-btn-transparent {
     background: transparent; border: none; color: #a33b4d;
-    font-family: 'Amiri'; font-size: 1rem; cursor: pointer;
+    font-family: 'Amiri'; font-size: 1.1rem; cursor: pointer; /* تكبير بسيط */
     opacity: 0.5; transition: 0.3s;
 }
 
@@ -26,21 +27,35 @@ section.active { display: flex; flex-direction: column; align-items: center; }
     width: 90%; max-width: 400px; margin-bottom: 25px;
 }
 
-.decorated-title { color: #a33b4d; font-weight: bold; }
+.decorated-title { 
+    color: #a33b4d; 
+    font-weight: bold; 
+    font-size: 1.8rem; /* تكبير العناوين */
+    margin-bottom: 15px;
+}
 
 .unlock-btn {
     background-color: #a33b4d; color: white; border: none;
-    padding: 12px 50px; border-radius: 50px;
-    font-family: 'Amiri'; font-size: 1.2rem; cursor: pointer;
+    padding: 14px 55px; border-radius: 50px;
+    font-family: 'Amiri'; font-size: 1.3rem; cursor: pointer; /* تكبير خط الزرار */
     box-shadow: 0 4px 15px rgba(163, 59, 77, 0.3);
 }
 
-#password { width: 80%; padding: 12px; border-radius: 10px; border: 1px solid #ffcad4; margin: 15px 0; text-align: center; }
+#password { 
+    width: 85%; 
+    padding: 12px; 
+    border-radius: 10px; 
+    border: 1px solid #ffcad4; 
+    margin: 15px 0; 
+    text-align: center; 
+    font-size: 1.1rem; 
+}
 
 .full-box-link {
     width: 100vw; background: white; padding: 20px 0;
     display: block; text-decoration: none; color: #a33b4d;
     border-top: 1px solid #f9d5da; border-bottom: 1px solid #f9d5da; margin: 20px 0;
+    font-size: 1.25rem; /* تكبير نص الأغنية */
 }
 
 .square-img {
@@ -52,7 +67,27 @@ section.active { display: flex; flex-direction: column; align-items: center; }
 .fade-in-up { opacity: 0; transform: translateY(30px); transition: 1.2s ease-out; }
 .fade-in-up.appear { opacity: 1; transform: translateY(0); }
 
-.timer-text { font-size: 1.2rem; font-weight: bold; color: #a33b4d; }
-.countdown-grid { display: flex; justify-content: center; gap: 10px; font-weight: bold; color: #a33b4d; font-size: 1.1rem; }
-.white-msg { background: white; padding: 20px; border-radius: 20px; width: 90%; max-width: 450px; line-height: 1.8; margin-bottom: 20px; }
+/* نصوص العدادات */
+.timer-text { font-size: 1.4rem; font-weight: bold; color: #a33b4d; }
+.countdown-grid { 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    font-weight: bold; 
+    color: #a33b4d; 
+    font-size: 1.3rem; /* تكبير أرقام عداد الفلانتين */
+}
+
+/* نصوص الرسائل والخطابات */
+.white-msg, .scroll-content p { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 20px; 
+    width: 90%; 
+    max-width: 450px; 
+    line-height: 1.8; 
+    margin-bottom: 20px; 
+    font-size: 1.2rem; /* تكبير نص الكلام اللي انت كاتبه */
+}
+
 .flower { font-size: 100px; cursor: pointer; margin: 30px 0; }
